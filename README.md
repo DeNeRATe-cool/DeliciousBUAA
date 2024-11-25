@@ -6,7 +6,7 @@
 
 ## 团队合影🥳
 
-![team-work](pre\team-work.jpg)
+![team-work](pre/team-work.jpg)
 
 ## 项目介绍
 
@@ -18,27 +18,27 @@
 
 ### 首页
 
-![index](pre\index.png)
+![index](pre/index.png)
 
 ### 美食推荐
 
-![recommand-1](pre\recommand-1.png)
+![recommand-1](pre/recommand-1.png)
 
-![recommand-2](pre\recommand-2.png)
+![recommand-2](pre/recommand-2.png)
 
-![recommand-3](pre\recommand-3.png)
+![recommand-3](pre/recommand-3.png)
 
 ### 美食欣赏
 
-![food-1](pre\food-1.png)
+![food-1](pre/food-1.png)
 
-![food-2](pre\food-2.png)
+![food-2](pre/food-2.png)
 
 ### 关于我们
 
-![intro-1](pre\intro-1.png)
+![intro-1](pre/intro-1.png)
 
-![intro-2](pre\intro-2.png)
+![intro-2](pre/intro-2.png)
 
 ## 项目技术要点
 
