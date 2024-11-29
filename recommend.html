@@ -27,6 +27,15 @@
 	<!-- Custom CSS -->
 	<link rel="stylesheet" href="css/custom.css">
 
+	<!-- 高德地图API -->
+	<script type="text/javascript">
+	window._AMapSecurityConfig = {
+		securityJsCode:'c47901779a9840bf89072bc1b0d51ebf',   // 如果需要安全密钥
+	}
+	</script>
+	<script type="text/javascript" src="https://webapi.amap.com/maps?v=2.0&key=1612e2f7c523e13ee3dada36bcc912cc"></script>
+	<!-- 高德地图UI组件库 -->
+	<script src="https://webapi.amap.com/ui/1.1/main.js"></script>
 
 </head>
 
@@ -97,10 +106,10 @@
 						<img src="images/img-01.jpg" class="img-fluid" alt="Image" style="width:450px;height:250px">
 						<div class="why-text">
 							<h4>鱼籽饭</h4>
-							<p>金黄诱人，颗颗鱼籽在舌尖跳跃，与软糯米饭完美融合，带来海洋的鲜美与满足。不容错过的美味佳肴，等你来品！</p>
+							<p>金黄诱人，颗颗鱼籽在舌尖跳跃，与软糯米饭完美融合，带来海洋的鲜美与满。不容错过的美味佳肴，等你来品！</p>
 						</div>
 					</div>
-					<a class="canteen-link" href="https://map.baidu.com/poi/%E5%8C%97%E4%BA%AC%E8%88%AA%E7%A9%BA%E8%88%AA%E5%A4%A9%E5%A4%A7%E5%AD%A6-%E5%8C%97%E5%8C%BA%E9%A3%9F%E5%A0%82/@12952288.55,4836953.045,19z?uid=e9086196c9c9de67a204648a&ugc_type=3&ugc_ver=1&device_ratio=2&compat=1&pcevaname=pc4.1&querytype=detailConInfo&da_src=shareurl" target="_blank">马上去吃！</a>
+					<a class="canteen-link" href="javascript:void(0)" onclick="showMap('新北食堂', 39.985379, 116.34448399999997)">马上去吃！</a>
 				</div>
 
 				<div class="col-lg-4 col-md-6 special-grid drinks">
@@ -111,18 +120,18 @@
 							<p>每一粒米都承载着独特的风味。热腾腾的石锅，搭配新鲜食材，带来满足的用餐体验。快来尝一尝，让美味唤醒你的味蕾！</p>
 						</div>
 					</div>
-					<a class="canteen-link" href="https://map.baidu.com/poi/%E5%8C%97%E4%BA%AC%E8%88%AA%E7%A9%BA%E8%88%AA%E5%A4%A9%E5%A4%A7%E5%AD%A6-%E5%8C%97%E5%8C%BA%E9%A3%9F%E5%A0%82/@12952288.55,4836953.045,19z?uid=e9086196c9c9de67a204648a&ugc_type=3&ugc_ver=1&device_ratio=2&compat=1&pcevaname=pc4.1&querytype=detailConInfo&da_src=shareurl" target="_blank">马上去吃！</a>
+					<a class="canteen-link" href="javascript:void(0)" onclick="showMap('新北食堂', 39.985379, 116.34448399999997)">马上去吃！</a>
 				</div>
 
 				<div class="col-lg-4 col-md-6 special-grid drinks">
 					<div class="gallery-single fix">
 						<img src="images/img-03.jpg" class="img-fluid" alt="Image" style="width:450px;height:250px">
 						<div class="why-text">
-							<h4>铁板饭</h4>
+							<h4>铁板</h4>
 							<p>铁板饭，热气腾腾，饭粒分明，搭配丰富食材，香脆可口，每一口都是满足。</p>
 						</div>
 					</div>
-					<a class="canteen-link" href="https://map.baidu.com/poi/%E5%8C%97%E4%BA%AC%E8%88%AA%E7%A9%BA%E8%88%AA%E5%A4%A9%E5%A4%A7%E5%AD%A6-%E5%8C%97%E5%8C%BA%E9%A3%9F%E5%A0%82/@12952288.55,4836953.045,19z?uid=e9086196c9c9de67a204648a&ugc_type=3&ugc_ver=1&device_ratio=2&compat=1&pcevaname=pc4.1&querytype=detailConInfo&da_src=shareurl" target="_blank">马上去吃！</a>
+					<a class="canteen-link" href="javascript:void(0)" onclick="showMap('新北食堂', 39.985379, 116.34448399999997)">马上去吃！</a>
 				</div>
 
 				<div class="col-lg-4 col-md-6 special-grid lunch">
@@ -133,7 +142,7 @@
 							<p>北航的“航味菜”以精选食材与独特工艺著称，融合南北风味，每一道菜品都蕴含着浓厚的文化气息与创新精神，值得每一位食客细细品味。</p>
 						</div>
 					</div>
-					<a class="canteen-link" href="https://map.baidu.com/poi/%E5%8C%97%E4%BA%AC%E8%88%AA%E7%A9%BA%E8%88%AA%E5%A4%A9%E5%A4%A7%E5%AD%A6%E5%AD%A6%E9%99%A2%E8%B7%AF%E6%A0%A1%E5%8C%BA%E4%B8%9C%E5%8C%BA%E9%A3%9F%E5%A0%82/@12952622.545,4836452.96,19z?uid=9182df0917f79ed8ae080f44&ugc_type=3&ugc_ver=1&device_ratio=2&compat=1&pcevaname=pc4.1&querytype=detailConInfo&da_src=shareurl" target="_blank">马上去吃！</a>
+					<a class="canteen-link" href="javascript:void(0)" onclick="showMap('东区食堂', 39.981858, 116.347722)">马上去吃！</a>
 				</div>
 
 				<div class="col-lg-4 col-md-6 special-grid lunch">
@@ -144,7 +153,7 @@
 							<p>北航“航味菜”精选食材，融合创新，口味独特，营养均衡，是学子们舌尖上的美味记忆。</p>
 						</div>
 					</div>
-					<a class="canteen-link" href="https://map.baidu.com/poi/%E5%8C%97%E4%BA%AC%E8%88%AA%E7%A9%BA%E8%88%AA%E5%A4%A9%E5%A4%A7%E5%AD%A6%E5%AD%A6%E9%99%A2%E8%B7%AF%E6%A0%A1%E5%8C%BA%E4%B8%9C%E5%8C%BA%E9%A3%9F%E5%A0%82/@12952622.545,4836452.96,19z?uid=9182df0917f79ed8ae080f44&ugc_type=3&ugc_ver=1&device_ratio=2&compat=1&pcevaname=pc4.1&querytype=detailConInfo&da_src=shareurl" target="_blank">马上去吃！</a>
+					<a class="canteen-link" href="javascript:void(0)" onclick="showMap('东区食堂', 39.981858, 116.347722)">马上去吃！</a>
 				</div>
 
 				<div class="col-lg-4 col-md-6 special-grid lunch">
@@ -156,7 +165,7 @@
 								扫</p>
 						</div>
 					</div>
-					<a class="canteen-link" href="https://map.baidu.com/poi/%E5%8C%97%E4%BA%AC%E8%88%AA%E7%A9%BA%E8%88%AA%E5%A4%A9%E5%A4%A7%E5%AD%A6%E5%AD%A6%E9%99%A2%E8%B7%AF%E6%A0%A1%E5%8C%BA%E4%B8%9C%E5%8C%BA%E9%A3%9F%E5%A0%82/@12952622.545,4836452.96,19z?uid=9182df0917f79ed8ae080f44&ugc_type=3&ugc_ver=1&device_ratio=2&compat=1&pcevaname=pc4.1&querytype=detailConInfo&da_src=shareurl" target="_blank">马上去吃！</a>
+					<a class="canteen-link" href="javascript:void(0)" onclick="showMap('东区食堂', 39.981858, 116.347722)">马上去吃！</a>
 				</div>
 
 				<div class="col-lg-4 col-md-6 special-grid dinner">
@@ -164,10 +173,10 @@
 						<img src="images/img-07.png" class="img-fluid" alt="Image" style="width:450px;height:250px">
 						<div class="why-text">
 							<h4>牛肉河粉</h4>
-							<p>尝一口鲜香滑嫩的牛肉河粉，汤汁浓郁，粉条Q弹，牛肉片薄而多汁，每一口都是满足。</p>
+							<p>尝一口鲜香滑嫩的牛肉河粉，汤汁浓郁，粉条Q弹，牛肉片多，每一口都是满足。</p>
 						</div>
 					</div>
-					<a class="canteen-link" href="https://map.baidu.com/search/%E5%8C%97%E4%BA%AC%E8%88%AA%E7%A9%BA%E8%88%AA%E5%A4%A9%E5%A4%A7%E5%AD%A6%E5%90%88%E4%B8%80%E9%A3%9F%E5%A0%82/@12952186.127100268,4836687.855,18.65z?querytype=s&da_src=shareurl&wd=%E5%8C%97%E4%BA%AC%E8%88%AA%E7%A9%BA%E8%88%AA%E5%A4%A9%E5%A4%A7%E5%AD%A6%E5%90%88%E4%B8%80%E9%A3%9F%E5%A0%82&c=131&src=0&pn=0&sug=0&l=19&b=(12952026.267056853,4836311.519066358;12952639.144439366,4836612.392673004)&from=webmap&biz_forward=%7B%22scaler%22:2,%22styles%22:%22pl%22%7D&device_ratio=2" target="_blank">马上去吃！</a>
+					<a class="canteen-link" href="javascript:void(0)" onclick="showMap('合一食堂', 39.982172, 116.344778)">马上去吃！</a>
 				</div>
 
 				<div class="col-lg-4 col-md-6 special-grid dinner">
@@ -178,7 +187,7 @@
 							<p>自助小碗菜，品种繁多，色香味俱全，每一道都精心烹制，满足你的各种口味需求</p>
 						</div>
 					</div>
-					<a class="canteen-link" href="https://map.baidu.com/search/%E5%8C%97%E4%BA%AC%E8%88%AA%E7%A9%BA%E8%88%AA%E5%A4%A9%E5%A4%A7%E5%AD%A6%E5%90%88%E4%B8%80%E9%A3%9F%E5%A0%82/@12952186.127100268,4836687.855,18.65z?querytype=s&da_src=shareurl&wd=%E5%8C%97%E4%BA%AC%E8%88%AA%E7%A9%BA%E8%88%AA%E5%A4%A9%E5%A4%A7%E5%AD%A6%E5%90%88%E4%B8%80%E9%A3%9F%E5%A0%82&c=131&src=0&pn=0&sug=0&l=19&b=(12952026.267056853,4836311.519066358;12952639.144439366,4836612.392673004)&from=webmap&biz_forward=%7B%22scaler%22:2,%22styles%22:%22pl%22%7D&device_ratio=2" target="_blank">马上去吃！</a>
+					<a class="canteen-link" href="javascript:void(0)" onclick="showMap('合一食堂', 39.982172, 116.344778)">马上去吃！</a>
 				</div>
 
 				<div class="col-lg-4 col-md-6 special-grid dinner">
@@ -186,10 +195,10 @@
 						<img src="images/img-09.jpg" class="img-fluid" alt="Image" style="width:450px;height:250px">
 						<div class="why-text">
 							<h4>鸭架</h4>
-							<p>鸭架，肉质细嫩，香而不腻，骨髓入味，搭配特制蘸料，风味独特，回味悠长。</p>
+							<p>鸭架，肉质细嫩，香而不腻，骨髓入，搭配制蘸料，风味独特，回味悠长。</p>
 						</div>
 					</div>
-					<a class="canteen-link" href="https://map.baidu.com/search/%E5%8C%97%E4%BA%AC%E8%88%AA%E7%A9%BA%E8%88%AA%E5%A4%A9%E5%A4%A7%E5%AD%A6%E5%90%88%E4%B8%80%E9%A3%9F%E5%A0%82/@12952186.127100268,4836687.855,18.65z?querytype=s&da_src=shareurl&wd=%E5%8C%97%E4%BA%AC%E8%88%AA%E7%A9%BA%E8%88%AA%E5%A4%A9%E5%A4%A7%E5%AD%A6%E5%90%88%E4%B8%80%E9%A3%9F%E5%A0%82&c=131&src=0&pn=0&sug=0&l=19&b=(12952026.267056853,4836311.519066358;12952639.144439366,4836612.392673004)&from=webmap&biz_forward=%7B%22scaler%22:2,%22styles%22:%22pl%22%7D&device_ratio=2" target="_blank">马上去吃！</a>
+					<a class="canteen-link" href="javascript:void(0)" onclick="showMap('合一食堂', 39.982172, 116.344778)">马上去吃！</a>
 				</div>
 
 			</div>
@@ -242,6 +251,222 @@
 	<script src="js/isotope.min.js"></script>
 	<script src="js/baguetteBox.min.js"></script>
 	<script src="js/custom.js"></script>
+
+	<script>
+	function showMap(destination, lat, lng) {
+		$('#mapModal').modal('show');
+		
+		// 更新食堂信息
+		updateCanteenInfo(destination);
+		
+		// 等待模态框完全显示后再初始化地图
+		$('#mapModal').on('shown.bs.modal', function () {
+			// 清除之前的地图内容
+			$('#baiduMap').empty();
+			
+			// 初始化地图
+			initAMap(destination, lat, lng);
+		});
+	}
+
+	function initAMap(destination, targetLat, targetLng) {
+		console.log('初始化地图:', destination, targetLat, targetLng);
+		
+		// 创建地图实例
+		const map = new AMap.Map('baiduMap', {
+			zoom: 16,
+			center: [targetLng, targetLat],
+			viewMode: '2D'
+		});
+		
+		// 添加目标位置标记
+		const marker = new AMap.Marker({
+			position: [targetLng, targetLat],
+			title: destination,
+			map: map
+		});
+		
+		// 添加定位控件
+		AMap.plugin(['AMap.Geolocation', 'AMap.Scale', 'AMap.ToolBar'], function(){
+			// 定位控件
+			const geolocation = new AMap.Geolocation({
+				enableHighAccuracy: true,
+				timeout: 10000,
+				buttonPosition: 'RB',
+				buttonOffset: new AMap.Pixel(10, 20),
+				zoomToAccuracy: true
+			});
+			
+			// 工具条控件
+			const toolbar = new AMap.ToolBar({
+				position: 'RB',
+				offset: new AMap.Pixel(10, 100)
+			});
+			
+			// 比例尺控件
+			const scale = new AMap.Scale();
+			
+			// 添加控件到地图
+			map.addControl(geolocation);
+			map.addControl(toolbar);
+			map.addControl(scale);
+			
+		});
+		
+		// 监听地图加载完成
+		map.on('complete', function() {
+			console.log('地图加载完成');
+		});
+	}
+
+	// 页面加载时检查权限
+	$(document).ready(function() {
+		if ("geolocation" in navigator) {
+			navigator.permissions.query({ name: 'geolocation' })
+				.then(function(permissionStatus) {
+					console.log("定位权限状态：", permissionStatus.state);
+					if (permissionStatus.state === 'denied') {
+						alert('请在浏览器设置中允许网站获取位置信息！\n\n' +
+							  'Chrome设置方法：\n' +
+							  '1. 点击地址栏左侧的锁定图标\n' +
+							  '2. 点击"位置"选项\n' +
+							  '3. 选择"允许"');
+					}
+				});
+		}
+	});
+
+	function updateCanteenInfo(destination) {
+		// 设置食堂名称
+		$('#canteenName').text(destination);
+		
+		// 根据不同食堂更新特色窗口信息
+		const specialWindows = {
+			'新北食堂': [
+				'铁板炒饭 - -1层',
+				'鱼籽饭 - 2层',
+				'石锅拌饭 - -1层',
+				'麻辣香锅 - 2层'
+			],
+			'东区食堂': [
+				'航味特色菜 - 2层',
+				'面食窗口 - 1层',
+				'盖浇饭 - 1层'
+			],
+			'合一食堂': [
+				'牛肉河粉 - 1层',
+				'自助小碗菜 - 2层',
+				'鸭架饭 - 1层',
+				'水饺馄饨 - 1层'
+			]
+		};
+		
+		// 清空并添加新的特色窗口
+		const $specialWindows = $('#specialWindows').empty();
+		specialWindows[destination].forEach(window => {
+			$specialWindows.append(`<li>${window}</li>`);
+		});
+		
+		// 更新实时状态（这里可以根据实际时间判断）
+		const now = new Date();
+		const hour = now.getHours();
+		let status = '';
+		if (hour >= 6.5 && hour < 9) {
+			status = '<span class="text-success">正在营业（早餐时间）</span>';
+		} else if (hour >= 10.5 && hour < 13.5) {
+			status = '<span class="text-success">正在营业（午餐时间）</span>';
+		} else if (hour >= 17 && hour < 19.5) {
+			status = '<span class="text-success">正在营业（晚餐时间）</span>';
+		} else {
+			status = '<span class="text-danger">当前未营业</span>';
+		}
+		$('#currentStatus').html(status);
+	}
+	</script>
+
+	<!-- 在body末尾添加模态框 -->
+	<div class="modal fade" id="mapModal" tabindex="-1" role="dialog" aria-labelledby="mapModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-xl" style="max-width: 95%; margin: 20px auto;">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="mapModalLabel">导航到食堂</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body" style="padding: 0;">
+					<div class="row no-gutters">
+						<div class="col-md-9">
+							<div id="baiduMap" style="height: 85vh;"></div>
+						</div>
+						<div class="col-md-3">
+							<div class="canteen-info" style="height: 85vh; overflow-y: auto; padding: 20px;">
+								<div id="canteenDetails">
+									<h4 id="canteenName" class="mb-3">食堂信息</h4>
+									<div class="info-section mb-4">
+										<h5>营业时间</h5>
+										<p id="openingHours">
+											早餐：6:30 - 9:00<br>
+											午餐：10:30 - 13:30<br>
+											晚餐：17:00 - 19:30
+										</p>
+									</div>
+									<div class="info-section mb-4">
+										<h5>特色窗口</h5>
+										<ul id="specialWindows" class="list-unstyled">
+										</ul>
+									</div>
+									<div class="info-section mb-4">
+										<h5>实时状态</h5>
+										<p id="currentStatus"></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<style>
+	.canteen-info {
+		background-color: #f8f9fa;
+	}
+
+	.canteen-info h4 {
+		color: #333;
+		border-bottom: 2px solid #007bff;
+		padding-bottom: 10px;
+	}
+
+	.canteen-info h5 {
+		color: #555;
+		font-size: 1.1rem;
+		margin-bottom: 10px;
+	}
+
+	.info-section {
+		background-color: white;
+		padding: 15px;
+		border-radius: 5px;
+		margin-bottom: 15px;
+		box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+	}
+
+	#specialWindows li {
+		margin-bottom: 8px;
+		padding-left: 20px;
+		position: relative;
+	}
+
+	#specialWindows li:before {
+		content: "•";
+		position: absolute;
+		left: 0;
+		color: #007bff;
+	}
+	</style>
 </body>
 
 </html>
