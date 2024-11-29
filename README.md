@@ -34,7 +34,7 @@
 
 ![food-2](pre/food-2.png)
 
-![map](pre\map.png)
+![map](pre/map.png)
 
 ### 关于我们
 
